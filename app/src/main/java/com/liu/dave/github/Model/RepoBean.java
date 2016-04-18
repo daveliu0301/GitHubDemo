@@ -1,4 +1,4 @@
-package com.liu.dave.github.Model;
+package com.liu.dave.github.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,77 +6,6 @@ import com.google.gson.annotations.SerializedName;
  * Created by LiuDong on 2016/4/8.
  */
 public class RepoBean {
-
-    /**
-     * id : 55658239
-     * name : GitHubApplication
-     * full_name : daveliu0301/GitHubApplication
-     * owner : {"login":"daveliu0301","id":17489199,"avatar_url":"https://avatars.githubusercontent.com/u/17489199?v=3","gravatar_id":"","url":"https://api.github.com/users/daveliu0301","html_url":"https://github.com/daveliu0301","followers_url":"https://api.github.com/users/daveliu0301/followers","following_url":"https://api.github.com/users/daveliu0301/following{/other_user}","gists_url":"https://api.github.com/users/daveliu0301/gists{/gist_id}","starred_url":"https://api.github.com/users/daveliu0301/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/daveliu0301/subscriptions","organizations_url":"https://api.github.com/users/daveliu0301/orgs","repos_url":"https://api.github.com/users/daveliu0301/repos","events_url":"https://api.github.com/users/daveliu0301/events{/privacy}","received_events_url":"https://api.github.com/users/daveliu0301/received_events","type":"UserBean","site_admin":false}
-     * private : false
-     * html_url : https://github.com/daveliu0301/GitHub
-     * description :
-     * fork : false
-     * url : https://api.github.com/repos/daveliu0301/GitHub
-     * forks_url : https://api.github.com/repos/daveliu0301/GitHub/forks
-     * keys_url : https://api.github.com/repos/daveliu0301/GitHub/keys{/key_id}
-     * collaborators_url : https://api.github.com/repos/daveliu0301/GitHub/collaborators{/collaborator}
-     * teams_url : https://api.github.com/repos/daveliu0301/GitHub/teams
-     * hooks_url : https://api.github.com/repos/daveliu0301/GitHub/hooks
-     * issue_events_url : https://api.github.com/repos/daveliu0301/GitHub/issues/events{/number}
-     * events_url : https://api.github.com/repos/daveliu0301/GitHub/events
-     * assignees_url : https://api.github.com/repos/daveliu0301/GitHub/assignees{/user}
-     * branches_url : https://api.github.com/repos/daveliu0301/GitHub/branches{/branch}
-     * tags_url : https://api.github.com/repos/daveliu0301/GitHub/tags
-     * blobs_url : https://api.github.com/repos/daveliu0301/GitHub/git/blobs{/sha}
-     * git_tags_url : https://api.github.com/repos/daveliu0301/GitHub/git/tags{/sha}
-     * git_refs_url : https://api.github.com/repos/daveliu0301/GitHub/git/refs{/sha}
-     * trees_url : https://api.github.com/repos/daveliu0301/GitHub/git/trees{/sha}
-     * statuses_url : https://api.github.com/repos/daveliu0301/GitHub/statuses/{sha}
-     * languages_url : https://api.github.com/repos/daveliu0301/GitHub/languages
-     * stargazers_url : https://api.github.com/repos/daveliu0301/GitHub/stargazers
-     * contributors_url : https://api.github.com/repos/daveliu0301/GitHub/contributors
-     * subscribers_url : https://api.github.com/repos/daveliu0301/GitHub/subscribers
-     * subscription_url : https://api.github.com/repos/daveliu0301/GitHub/subscription
-     * commits_url : https://api.github.com/repos/daveliu0301/GitHub/commits{/sha}
-     * git_commits_url : https://api.github.com/repos/daveliu0301/GitHub/git/commits{/sha}
-     * comments_url : https://api.github.com/repos/daveliu0301/GitHub/comments{/number}
-     * issue_comment_url : https://api.github.com/repos/daveliu0301/GitHub/issues/comments{/number}
-     * contents_url : https://api.github.com/repos/daveliu0301/GitHub/contents/{+path}
-     * compare_url : https://api.github.com/repos/daveliu0301/GitHub/compare/{base}...{head}
-     * merges_url : https://api.github.com/repos/daveliu0301/GitHub/merges
-     * archive_url : https://api.github.com/repos/daveliu0301/GitHub/{archive_format}{/ref}
-     * downloads_url : https://api.github.com/repos/daveliu0301/GitHub/downloads
-     * issues_url : https://api.github.com/repos/daveliu0301/GitHub/issues{/number}
-     * pulls_url : https://api.github.com/repos/daveliu0301/GitHub/pulls{/number}
-     * milestones_url : https://api.github.com/repos/daveliu0301/GitHub/milestones{/number}
-     * notifications_url : https://api.github.com/repos/daveliu0301/GitHub/notifications{?since,all,participating}
-     * labels_url : https://api.github.com/repos/daveliu0301/GitHub/labels{/name}
-     * releases_url : https://api.github.com/repos/daveliu0301/GitHub/releases{/id}
-     * deployments_url : https://api.github.com/repos/daveliu0301/GitHub/deployments
-     * created_at : 2016-04-07T02:49:13Z
-     * updated_at : 2016-04-07T02:49:13Z
-     * pushed_at : 2016-04-07T02:49:13Z
-     * git_url : git://github.com/daveliu0301/GitHubApplication.git
-     * ssh_url : git@github.com:daveliu0301/GitHubApplication.git
-     * clone_url : https://github.com/daveliu0301/GitHub.git
-     * svn_url : https://github.com/daveliu0301/GitHub
-     * homepage : null
-     * size : 0
-     * stargazers_count : 0
-     * watchers_count : 0
-     * language : null
-     * has_issues : true
-     * has_downloads : true
-     * has_wiki : true
-     * has_pages : false
-     * forks_count : 0
-     * mirror_url : null
-     * open_issues_count : 0
-     * forks : 0
-     * open_issues : 0
-     * watchers : 0
-     * default_branch : master
-     */
 
     @SerializedName("id")
     private int id;
@@ -757,5 +686,79 @@ public class RepoBean {
 
     public void setDefaultBranch(String defaultBranch) {
         this.defaultBranch = defaultBranch;
+    }
+
+    @Override
+    public String toString() {
+        return "RepoBean{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", owner=" + owner +
+                ", privateX=" + privateX +
+                ", htmlUrl='" + htmlUrl + '\'' +
+                ", description='" + description + '\'' +
+                ", fork=" + fork +
+                ", url='" + url + '\'' +
+                ", forksUrl='" + forksUrl + '\'' +
+                ", keysUrl='" + keysUrl + '\'' +
+                ", collaboratorsUrl='" + collaboratorsUrl + '\'' +
+                ", teamsUrl='" + teamsUrl + '\'' +
+                ", hooksUrl='" + hooksUrl + '\'' +
+                ", issueEventsUrl='" + issueEventsUrl + '\'' +
+                ", eventsUrl='" + eventsUrl + '\'' +
+                ", assigneesUrl='" + assigneesUrl + '\'' +
+                ", branchesUrl='" + branchesUrl + '\'' +
+                ", tagsUrl='" + tagsUrl + '\'' +
+                ", blobsUrl='" + blobsUrl + '\'' +
+                ", gitTagsUrl='" + gitTagsUrl + '\'' +
+                ", gitRefsUrl='" + gitRefsUrl + '\'' +
+                ", treesUrl='" + treesUrl + '\'' +
+                ", statusesUrl='" + statusesUrl + '\'' +
+                ", languagesUrl='" + languagesUrl + '\'' +
+                ", stargazersUrl='" + stargazersUrl + '\'' +
+                ", contributorsUrl='" + contributorsUrl + '\'' +
+                ", subscribersUrl='" + subscribersUrl + '\'' +
+                ", subscriptionUrl='" + subscriptionUrl + '\'' +
+                ", commitsUrl='" + commitsUrl + '\'' +
+                ", gitCommitsUrl='" + gitCommitsUrl + '\'' +
+                ", commentsUrl='" + commentsUrl + '\'' +
+                ", issueCommentUrl='" + issueCommentUrl + '\'' +
+                ", contentsUrl='" + contentsUrl + '\'' +
+                ", compareUrl='" + compareUrl + '\'' +
+                ", mergesUrl='" + mergesUrl + '\'' +
+                ", archiveUrl='" + archiveUrl + '\'' +
+                ", downloadsUrl='" + downloadsUrl + '\'' +
+                ", issuesUrl='" + issuesUrl + '\'' +
+                ", pullsUrl='" + pullsUrl + '\'' +
+                ", milestonesUrl='" + milestonesUrl + '\'' +
+                ", notificationsUrl='" + notificationsUrl + '\'' +
+                ", labelsUrl='" + labelsUrl + '\'' +
+                ", releasesUrl='" + releasesUrl + '\'' +
+                ", deploymentsUrl='" + deploymentsUrl + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                ", pushedAt='" + pushedAt + '\'' +
+                ", gitUrl='" + gitUrl + '\'' +
+                ", sshUrl='" + sshUrl + '\'' +
+                ", cloneUrl='" + cloneUrl + '\'' +
+                ", svnUrl='" + svnUrl + '\'' +
+                ", homepage=" + homepage +
+                ", size=" + size +
+                ", stargazersCount=" + stargazersCount +
+                ", watchersCount=" + watchersCount +
+                ", language=" + language +
+                ", hasIssues=" + hasIssues +
+                ", hasDownloads=" + hasDownloads +
+                ", hasWiki=" + hasWiki +
+                ", hasPages=" + hasPages +
+                ", forksCount=" + forksCount +
+                ", mirrorUrl=" + mirrorUrl +
+                ", openIssuesCount=" + openIssuesCount +
+                ", forks=" + forks +
+                ", openIssues=" + openIssues +
+                ", watchers=" + watchers +
+                ", defaultBranch='" + defaultBranch + '\'' +
+                '}';
     }
 }

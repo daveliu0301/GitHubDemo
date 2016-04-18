@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".View.MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.liu.dave.github.viewModel.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="GitHub username"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:onEditorAction="@{viewModel.onSearchAction}" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_repo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edit_username">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</layout>

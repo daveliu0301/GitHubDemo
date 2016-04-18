@@ -1,7 +1,7 @@
 package com.liu.dave.github;
 
-import com.liu.dave.github.Model.RepoBean;
-import com.liu.dave.github.Model.UserBean;
+import com.liu.dave.github.model.RepoBean;
+import com.liu.dave.github.model.UserBean;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import retrofit2.http.Url;
  */
 public interface GitHubService {
     @GET("users/{user}/repos")
-    Call<List<RepoBean>> listRepos(@Path("user") String user);
+    Call<List<RepoBean>> listRepos(@Path("user") String username);
 
     @GET
     Call<UserBean> userFromUrl(@Url String userUrl);

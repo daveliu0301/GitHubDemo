@@ -2,9 +2,9 @@
 Custom App on Android for GitHub API.
 
 #Libraries used
-Retrofit
-Gson
-Data Binding
+*Retrofit
+*Gson
+*Data Binding
 
 
 

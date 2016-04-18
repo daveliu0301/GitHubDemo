@@ -1,4 +1,4 @@
-package com.liu.dave.github.Model;
+package com.liu.dave.github.model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -176,5 +176,28 @@ public class UserBean {
 
     public void setSiteAdmin(boolean siteAdmin) {
         this.siteAdmin = siteAdmin;
+    }
+
+    @Override
+    public String toString() {
+        return "UserBean{" +
+                "login='" + login + '\'' +
+                ", id=" + id +
+                ", avatarUrl='" + avatarUrl + '\'' +
+                ", gravatarId='" + gravatarId + '\'' +
+                ", url='" + url + '\'' +
+                ", htmlUrl='" + htmlUrl + '\'' +
+                ", followersUrl='" + followersUrl + '\'' +
+                ", followingUrl='" + followingUrl + '\'' +
+                ", gistsUrl='" + gistsUrl + '\'' +
+                ", starredUrl='" + starredUrl + '\'' +
+                ", subscriptionsUrl='" + subscriptionsUrl + '\'' +
+                ", organizationsUrl='" + organizationsUrl + '\'' +
+                ", reposUrl='" + reposUrl + '\'' +
+                ", eventsUrl='" + eventsUrl + '\'' +
+                ", receivedEventsUrl='" + receivedEventsUrl + '\'' +
+                ", type='" + type + '\'' +
+                ", siteAdmin=" + siteAdmin +
+                '}';
     }
 }
