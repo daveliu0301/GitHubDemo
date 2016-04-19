@@ -9,7 +9,6 @@ import com.liu.dave.github.databinding.ItemRepoBinding;
 import com.liu.dave.github.model.RepoBean;
 import com.liu.dave.github.viewModel.ItemRepoViewModel;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

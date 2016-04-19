@@ -10,14 +10,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:padding="10dp"
+        android:layout_height="match_parent"
         android:onClick="@{viewModel.onItemClick}"
-        android:layout_height="match_parent">
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.repoString}"/>
+            android:text="@{viewModel.repoString}" />
     </RelativeLayout>
 
 </layout>
